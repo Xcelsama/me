@@ -6,13 +6,18 @@
 :root {
     --primary:#93C5FD;
     --text:#FFFFFF;
+    --bgwhite: #FFFFFF ;
     --bg:#0d1117;
+    
 }
 
 body{
     background-color:var(--bg);
     color:var(--text);
     font-family: 'Segoe UI', Arial, sans-serif;
+}
+body.dark{ 
+    
 }
 .profile-header{
    display:flex;
