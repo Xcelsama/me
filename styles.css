@@ -4,10 +4,9 @@
     padding: 0;
 }
 :root {
-    --primary:#93C5FD;
-    --text:#FFFFFF;
-    --bgwhite: #FFFFFF ;
-    --bg:#0d1117;
+    --primary:#02071a;
+    --text:#0f0b00;
+    --bg:#FFFFFF ;
     
 }
 
@@ -17,7 +16,9 @@ body{
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 body.dark{ 
-    
+--bg: #0d1117;
+--text: #FFFFFF;
+--primary: #93C5FD;
 }
 .profile-header{
    display:flex;
