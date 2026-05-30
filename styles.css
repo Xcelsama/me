@@ -76,7 +76,7 @@ img.avatar{
  text-decoration: none;
 
 }
-a:hover{
+a:hover, a{
     color:navy;
     text-decoration: none;
 }
