@@ -21,6 +21,57 @@ body.light{
     --text:#0f0b00;
     --bg:#FFFFFF ;
 }
+
+
+.top-bar{
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 999;
+}
+
+#theme-toggle{
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(0,0,0,0.25);
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 18px;
+    line-height: 1;
+}
+
+#theme-toggle:hover{
+    transform: translateY(-1px);
+    background: rgba(147,197,253,0.12);
+    border-color: rgba(147,197,253,0.55);
+}
+
+#theme-toggle:active{
+    transform: translateY(0px) scale(0.98);
+}
+
+#theme-toggle:focus-visible{
+    outline: 3px solid rgba(147,197,253,0.65);
+    outline-offset: 2px;
+}
+
+body.light #theme-toggle{
+    border-color: rgba(2,7,26,0.18);
+    background: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 480px){
+    .top-bar{ top: 10px; right: 10px; }
+    #theme-toggle{ width: 40px; height: 40px; font-size: 17px; }
+}
 .profile-header{
    display:flex;
    flex-direction: column;
