@@ -78,9 +78,10 @@ img.avatar{
 
 }
 a:hover{
-    color:navy;
+    color:yellow;
 }
 
 a{
 text-decoration: none;
+text-decoration-color: #FFFFFF;
 }
