@@ -79,6 +79,8 @@ img.avatar{
 }
 a:hover{
     color:navy;
-    text-decoration: none;
+}
 
+a{
+text-decoration: none;
 }
