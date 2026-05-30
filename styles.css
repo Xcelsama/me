@@ -86,13 +86,15 @@ body.light #theme-toggle{
    background-size:cover;
 }
 
-/* Refined name styling + animation */
+
 .profile-header h1{
     margin-top: 12px;
     font-size: 28px;
     letter-spacing: -0.03em;
+    font-family: "Playwrite England", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     animation: nameFadeUp 650ms ease-out both;
 }
+
 
 
 @keyframes nameFadeUp{
