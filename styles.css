@@ -3,10 +3,11 @@
     margin:0;
     padding: 0;
 }
-:root {
-    --primary:#02071a;
-    --text:#0f0b00;
-    --bg:#FFFFFF ;
+:root { 
+--bg: #0d1117;
+--text: #FFFFFF;
+--primary: #93C5FD;
+   
     
 }
 
@@ -15,10 +16,10 @@ body{
     color:var(--text);
     font-family: 'Segoe UI', Arial, sans-serif;
 }
-body.dark{ 
---bg: #0d1117;
---text: #FFFFFF;
---primary: #93C5FD;
+body.light{ 
+ --primary:#02071a;
+    --text:#0f0b00;
+    --bg:#FFFFFF ;
 }
 .profile-header{
    display:flex;
@@ -76,7 +77,8 @@ img.avatar{
  text-decoration: none;
 
 }
-a:hover, a{
+a:hover{
     color:navy;
     text-decoration: none;
+
 }
