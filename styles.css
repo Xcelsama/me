@@ -82,7 +82,8 @@ body.light #theme-toggle{
    text-align: center;
    padding: 60px 20px;
    background-image: url('cover.jpg');
-   background-repeat:cover;
+   background-repeat:no-repeat;
+   background-position:center;
    background-size:cover;
 }
 
@@ -194,4 +195,8 @@ body.light a:visited{
 }
 body.light a:hover{
     color: #ffb020;
+}
+
+.avatar{
+    object-fit: cover;
 }
