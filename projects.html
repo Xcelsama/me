@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Excel Amadi, full-stack web developer: browser-based tools, web apps and designs.">
+    <meta name="theme-color" content="#07090f">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | Excel Amadi">
+    <meta property="og:description" content="Projects by Excel Amadi, full-stack web developer: browser-based tools, web apps and designs.">
+    <meta property="og:url" content="https://xcelsama.is-a.dev/projects.html">
+    <meta property="og:image" content="https://xcelsama.is-a.dev/images/og.jpg">
+    <meta property="og:image:alt" content="Excel Amadi, graphic designer and full-stack developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    <title>Projects | Excel Amadi</title>
+</head>
+<body>
+
+    <!-- Loading screen: the X draws itself, then js/loader.js fades it out -->
+    <div id="loader" role="status" aria-label="Loading">
+        <svg class="loader__mark" viewBox="0 0 200 200" aria-hidden="true">
+            <path class="loader__bar loader__bar--a" pathLength="1" d="M56 61 L144 146"/>
+            <path class="loader__cut" pathLength="1" d="M144 56 L56 146"/>
+            <path class="loader__bar loader__bar--b" pathLength="1" d="M144 56 L56 146"/>
+            <circle class="loader__dot" cx="100" cy="52" r="11"/>
+        </svg>
+    </div>
+    <noscript><style>#loader{display:none}</style></noscript>
+    <script src="js/loader.js"></script>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="site-nav__logo" href="index.html" aria-label="Home">
+    <svg viewBox="0 0 200 200" width="32" height="32" aria-hidden="true">
+        <path d="M56 61 L144 146" fill="none" stroke="currentColor" stroke-width="21" stroke-linecap="round"/>
+        <path d="M144 56 L56 146" fill="none" stroke="var(--bg)" stroke-width="30" stroke-linecap="round"/>
+        <path d="M144 56 L56 146" fill="none" stroke="currentColor" stroke-width="21" stroke-linecap="round"/>
+        <circle cx="100" cy="52" r="11" fill="currentColor"/>
+    </svg>
+</a>
+            <ul class="site-nav__list">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="creative.html">Creative</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="projects" class="projects">
+            <div class="container">
+
+                <!-- Heading block -->
+                <p class="section-label">03. Projects</p>
+                <h1 class="projects__title">Things I’ve Built</h1>
+                <p class="projects__text">
+                    Web apps, tools and designs, from file utilities that run entirely in the browser
+                    to sites built for real people. Projects with a live site link straight to it. Private code stays private, so some have no GitHub link.
+                </p>
+
+                <!-- Big projects: copy one <article> block to add another -->
+                <h2 class="projects__more-title projects__more-title--first">Flagship projects</h2>
+                <div class="project-grid project-grid--flagship">
+                    <article class="project-card">
+                        <h2 class="project-card__title">AnyFile Viewer</h2>
+                        <p class="project-card__kind">Flagship. Web app, PWA and Android APK</p>
+                        <p class="project-card__text">Open, preview and edit files entirely on your device. No uploads, no backend, no account. MIT licensed, with a download page for the Android APK.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js 14</li>
+                            <li class="tag">CodeMirror</li>
+                            <li class="tag">PWA</li>
+                            <li class="tag">Capacitor</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://any-file-opener-ten.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="AnyFile Viewer live site (opens in a new tab)">Live site</a></li>
+                            <li><a class="project-link" href="https://github.com/Xcelsama/Any-file-opener" target="_blank" rel="noopener noreferrer" aria-label="AnyFile Viewer on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">AnyFile Compressor</h2>
+                        <p class="project-card__kind">Flagship. Runs fully in the browser</p>
+                        <p class="project-card__text">Compress and convert images, PDFs, DOCX, audio and video without uploading anything. Everything happens on your own device.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js</li>
+                            <li class="tag">WebAssembly codecs</li>
+                            <li class="tag">pdf-lib</li>
+                            <li class="tag">ffmpeg.wasm</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link" href="https://github.com/Xcelsama/anyfile-compressor" target="_blank" rel="noopener noreferrer" aria-label="AnyFile Compressor on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">mypai</h2>
+                        <p class="project-card__kind">Flagship. Open source study assistant on WhatsApp</p>
+                        <p class="project-card__text">A study partner that lives inside WhatsApp: tasks and reminders, a class timetable, spaced-repetition flashcards, quizzes and an AI tutor, with no new app to install. Students can host it for free, every command is a single file, and it ships with 111 tests under the GPL-3.0 licence.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Node.js</li>
+                            <li class="tag">Baileys</li>
+                            <li class="tag">AI tutor</li>
+                            <li class="tag">Open source</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://mypai-web.vercel.app/#free" target="_blank" rel="noopener noreferrer" aria-label="mypai live site (opens in a new tab)">Live site</a></li>
+                            <li><a class="project-link" href="https://github.com/Xcelsama/mypai-public" target="_blank" rel="noopener noreferrer" aria-label="mypai on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">Absolute Anatomy</h2>
+                        <p class="project-card__kind">Flagship. In progress</p>
+                        <p class="project-card__text">A free interactive 3D atlas of the human body with an article library, quizzes, flashcards and study tools. Built while studying Anatomy. Everything a visitor saves stays in their own browser, and a content-check script validates every article, quiz and deck.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">three.js</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://absolutee-anatomyy.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Absolute Anatomy live site (opens in a new tab)">Live site</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">Excel’s Gallery</h2>
+                        <p class="project-card__kind">Flagship. Design and code together</p>
+                        <p class="project-card__text">A before-and-after gallery for my Lightroom Mobile edits, with Story posts, music and a hidden admin studio secured by Supabase Auth and Row Level Security.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js</li>
+                            <li class="tag">Supabase</li>
+                            <li class="tag">Row Level Security</li>
+                            <li class="tag">sharp</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://excels-gallery.vercel.app/gallery" target="_blank" rel="noopener noreferrer" aria-label="Excel’s Gallery live site (opens in a new tab)">Live site</a></li>
+                            <li><a class="project-link" href="https://github.com/Xcelsama/excels-gallery" target="_blank" rel="noopener noreferrer" aria-label="Excel’s Gallery on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <img class="thumb" src="images/shots/nexora.jpg" alt="Nexora home page with a search bar and an example itinerary" width="1280" height="720" loading="lazy">
+                        <h2 class="project-card__title">Nexora</h2>
+                        <p class="project-card__kind">Flagship. Team product, I lead the frontend</p>
+                        <p class="project-card__text">A booking and lifestyle platform for high-spending clients, built by a small team. I lead the frontend and built the shared design system.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">HTML</li>
+                            <li class="tag">CSS</li>
+                            <li class="tag">Design system</li>
+                            <li class="tag">Cloudflare Workers</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://nexora-expanded-version.ogundejiemmanuel18.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Nexora live site (opens in a new tab)">Live site</a></li>
+                            <li><a class="project-link" href="https://github.com/Xcelsama/NEXORA-UI-UX" target="_blank" rel="noopener noreferrer" aria-label="Nexora UI/UX on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">Naija Vox</h2>
+                        <p class="project-card__kind">Flagship. Runs fully in the browser</p>
+                        <p class="project-card__text">A Nigerian text-to-speech studio with six Nigerian-accent voices that read English, Pidgin, Yoruba, Igbo and Hausa. It supports tags like [softly] and [pause:500ms], sound effects, and exports to WAV, MP3, SRT and WebM. No server and no API key.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">Web Speech</li>
+                            <li class="tag">Audio export</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://naija-vox.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Naija Vox live site (opens in a new tab)">Live site</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">SFX Vault</h2>
+                        <p class="project-card__kind">Flagship. Built for my own video editing</p>
+                        <p class="project-card__text">A password-protected sound-effects library I built because I need sound effects for editing. It searches my own sounds and Freesound together, with preview and download.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js</li>
+                            <li class="tag">Freesound API</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://soundvault-beta-six.vercel.app/login" target="_blank" rel="noopener noreferrer" aria-label="SFX Vault live site (opens in a new tab)">Live site</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">Lens OCR</h2>
+                        <p class="project-card__kind">Flagship. Image to text, in the browser</p>
+                        <p class="project-card__text">Pulls the text out of images right in the browser. Drop in up to 20 images and get one .txt file back, with nothing to install and no account.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js</li>
+                            <li class="tag">Tailwind CSS</li>
+                            <li class="tag">Tesseract.js</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link" href="https://github.com/Xcelsama/lens-ocr" target="_blank" rel="noopener noreferrer" aria-label="Lens OCR on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">Chitu-Ka Foods Website</h2>
+                        <p class="project-card__kind">Flagship. Client project, live business site</p>
+                        <p class="project-card__text">A website I built for a client, Chitu-Ka Foods, a Nigerian brand making fibre-enriched Farina Swallow. It presents the products and prices, the NAFDAC and SON certification, serving ideas and FAQs, and takes orders through WhatsApp.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js</li>
+                            <li class="tag">WhatsApp ordering</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link project-link--live" href="https://ckf-farina-swallow.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Chitu-Ka Foods website live site (opens in a new tab)">Live site</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">WhatsApp Broadcast Panel</h2>
+                        <p class="project-card__kind">Flagship. Built for a business</p>
+                        <p class="project-card__text">A local-first customer messaging panel for Chitu-Ka Foods. It never sends unless a human triggers it, and it always starts stopped.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Node.js</li>
+                            <li class="tag">Express</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link" href="https://github.com/Xcelsama/whatsapp-broadcast-panel" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Broadcast Panel on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <h2 class="project-card__title">Dock</h2>
+                        <p class="project-card__kind">Flagship. Cross-device transfer</p>
+                        <p class="project-card__text">Move files and text between your own devices: drop it in on your phone, pick it up on your PC. Items sync live and expire on their own unless you Save or Pin them.</p>
+                        <ul class="project-card__tags" aria-label="Technologies">
+                            <li class="tag">Next.js</li>
+                            <li class="tag">Upstash Redis</li>
+                            <li class="tag">Supabase</li>
+                        </ul>
+                        <ul class="project-card__links">
+                            <li><a class="project-link" href="https://github.com/Xcelsama/dock" target="_blank" rel="noopener noreferrer" aria-label="Dock on GitHub (opens in a new tab)">GitHub</a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <!-- Smaller projects: copy one <li> to add another -->
+                <h2 class="projects__more-title">Smaller projects and experiments</h2>
+                <ul class="project-list">
+                    <li class="project-row">
+                        <h3 class="project-row__name">Papa 64</h3>
+                        <div class="project-row__body">
+                            <p class="project-row__text">A birthday tribute site for Pastor David Ibiyeomie’s 64th: story chapters, a Moments gallery with a lightbox and a timed thank-you phase.</p>
+                            <p class="project-row__stack">HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="project-row__links"><a class="project-link project-link--live" href="https://papa-64.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Papa 64 live site (opens in a new tab)">Live site</a></div>
+                    </li>
+                    <li class="project-row">
+                        <h3 class="project-row__name">Nexora Waitlist</h3>
+                        <div class="project-row__body">
+                            <p class="project-row__text">A one-page waitlist that saves a visitor’s email and phone to Supabase, in the Nexora brand, with a share card for WhatsApp.</p>
+                            <p class="project-row__stack">HTML, CSS, JavaScript, Supabase</p>
+                        </div>
+                        <div class="project-row__links"><a class="project-link project-link--live" href="https://nexora-waitlistt.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Nexora Waitlist live site (opens in a new tab)">Live site</a></div>
+                    </li>
+                    <li class="project-row">
+                        <h3 class="project-row__name">Bug Tackler</h3>
+                        <div class="project-row__body">
+                            <p class="project-row__text">Hackathon kit for Flip the Switch: a free model triages a bug with scripts, a stronger model and a human fix it, and a script restores the originals if tests still fail.</p>
+                            <p class="project-row__stack">Node.js scripts</p>
+                        </div>
+                        <div class="project-row__links"><a class="project-link" href="https://github.com/Xcelsama/Bug-Tackler" target="_blank" rel="noopener noreferrer" aria-label="Bug Tackler on GitHub (opens in a new tab)">GitHub</a></div>
+                    </li>
+                    <li class="project-row">
+                        <h3 class="project-row__name">DevTok</h3>
+                        <div class="project-row__body">
+                            <p class="project-row__text">A TikTok-style feed of 334 front-end dev posts, 12 a day, with a daily streak, saves and PWA install.</p>
+                            <p class="project-row__stack">Next.js, React, localStorage</p>
+                        </div>
+                        <div class="project-row__links"><a class="project-link" href="https://github.com/Xcelsama/devtok" target="_blank" rel="noopener noreferrer" aria-label="DevTok on GitHub (opens in a new tab)">GitHub</a></div>
+                    </li>
+                    <li class="project-row">
+                        <h3 class="project-row__name">Photo Drop</h3>
+                        <div class="project-row__body">
+                            <p class="project-row__text">Upload and download full-quality photos by link, with no login and no compression.</p>
+                            <p class="project-row__stack">Next.js, Supabase</p>
+                        </div>
+                        <div class="project-row__links"><a class="project-link" href="https://github.com/Xcelsama/photo-drop" target="_blank" rel="noopener noreferrer" aria-label="Photo Drop on GitHub (opens in a new tab)">GitHub</a></div>
+                    </li>
+                    <li class="project-row">
+                        <h3 class="project-row__name">Timer</h3>
+                        <div class="project-row__body">
+                            <p class="project-row__text">A simple fullscreen countdown timer that runs into pulsing red overtime.</p>
+                            <p class="project-row__stack">HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="project-row__links"><a class="project-link" href="https://github.com/Xcelsama/Web-Timer" target="_blank" rel="noopener noreferrer" aria-label="Timer on GitHub (opens in a new tab)">GitHub</a></div>
+                    </li>
+                    <li class="project-row">
+                        <h3 class="project-row__name">Flight Booking Display</h3>
+                        <div class="project-row__body">
+                            <p class="project-row__text">A mobile flight-booking screen built as internship work, in the style of Etihad Airways. Front end only, with no backend and no real bookings.</p>
+                            <p class="project-row__stack">Front end only</p>
+                        </div>
+                        <div class="project-row__links"><a class="project-link" href="https://github.com/Xcelsama/SACRET" target="_blank" rel="noopener noreferrer" aria-label="Flight Booking Display on GitHub (opens in a new tab)">GitHub</a></div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="site-footer__text">Designed and built by Excel Amadi &copy; 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

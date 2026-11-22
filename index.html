@@ -2,55 +2,460 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-
-
+    <meta name="description" content="Excel Amadi is a graphic designer and full-stack developer from Port Harcourt, Nigeria. He designs posters, flyers and interfaces, and builds them into animated websites and web apps.">
+    <meta name="theme-color" content="#07090f">
+    <meta property="og:url" content="https://xcelsama.is-a.dev/">
+    <meta property="og:image" content="https://xcelsama.is-a.dev/images/og.jpg">
+    <meta property="og:image:alt" content="Excel Amadi, graphic designer and full-stack developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Excel Amadi | Graphic Designer and Full-Stack Developer">
+    <meta property="og:description" content="I design posters, flyers and interfaces, then build them into websites and web apps that move and flow.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+England:wght@400&display=swap" rel="stylesheet">
-
-    <title>Excel-Dev</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    <title>Excel Amadi | Graphic Designer and Full-Stack Developer</title>
 </head>
 <body>
 
-    <div class="top-bar">
-        <button id="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+    <!-- Loading screen: the X draws itself, then js/loader.js fades it out -->
+    <div id="loader" role="status" aria-label="Loading">
+        <svg class="loader__mark" viewBox="0 0 200 200" aria-hidden="true">
+            <path class="loader__bar loader__bar--a" pathLength="1" d="M56 61 L144 146"/>
+            <path class="loader__cut" pathLength="1" d="M144 56 L56 146"/>
+            <path class="loader__bar loader__bar--b" pathLength="1" d="M144 56 L56 146"/>
+            <circle class="loader__dot" cx="100" cy="52" r="11"/>
+        </svg>
     </div>
-    <!-- PROFILE-HEADER -->
-    <section class="profile-header">
-        <div>
-<img class="avatar" src="avatar.png" class="avatar" alt="avatar img">
-<h1>Excel Hephzibah Amadi</h1>
-<p>Act like this is  a cool bio</p>
-</div>
-<!-- PROFILE-INFO -->
-</section>
-<section class="profile-info">
-<span><i class="fa-solid fa-location-dot"></i> <a href="https://share.google/GxrE7fDFmadcsYKy0">Port Harcourt</a></span>
-<span><i class="fa-solid fa-cross"></i> <a href='https://share.google/JA9dV4GA0FfFohk3Y' target='_blank'>Christian</a></span>
-<span><i class="fa-solid fa-church"></i> <a href="https://www.smhos.org" target="_blank">Salvation Ministries</a></span>
-<span><i class="fa-solid fa-code"></i> <a href="https://www.coursera.org/articles/full-stack-developer" target="_blank">Fullstack Dev</a> </span>
-<span><i class="fa-solid fa-school"></i><a href="https://www.uniport.edu.ng/" target="_blank">Uniport</a>
-</span>
-</section>
+    <noscript><style>#loader{display:none}</style></noscript>
+    <script src="js/loader.js"></script>
 
-<!-- SOCIAL-MEDIA -->
-<section class="social-media">
-    <a href="https://wa.me/+2347045035241" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    <a href="https://github.com/Xcelsama" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="mailto:ms.excel.amadi@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-    <a href="https://discord.com/invite/hjDzt9kR" target="_blank"><i class="fa-brands fa-discord"></i></a>
-    <a href="https://twitter.com/xcelsama_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-    <a href="https://instagram.com/xcel_sama" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.facebook.com/itz.hepzibah.5" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://dev.to/xcelsama" target="_blank"><i class="fa-brands fa-dev"></i></a>
-    <a href="https://linktr.ee/xcelsama" target="_blank"><i class="fa-solid fa-link"></i></a>
-</section>
+    <a class="skip-link" href="#main">Skip to content</a>
 
 
- </section>
-    <script src="script.js"> </script>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="site-nav__logo" href="index.html" aria-label="Home">
+    <svg viewBox="0 0 200 200" width="32" height="32" aria-hidden="true">
+        <path d="M56 61 L144 146" fill="none" stroke="currentColor" stroke-width="21" stroke-linecap="round"/>
+        <path d="M144 56 L56 146" fill="none" stroke="var(--bg)" stroke-width="30" stroke-linecap="round"/>
+        <path d="M144 56 L56 146" fill="none" stroke="currentColor" stroke-width="21" stroke-linecap="round"/>
+        <circle cx="100" cy="52" r="11" fill="currentColor"/>
+    </svg>
+</a>
+            <ul class="site-nav__list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="creative.html">Creative</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section id="top" class="hero">
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <h1 class="hero__name">Excel<br>Amadi</h1>
+                    <p class="hero__line">I design the poster, then build the app behind it.</p>
+                    <p class="hero__text">
+                        Graphic designer and self-taught full-stack developer in Port Harcourt.
+                        Flyers and interfaces on one side, file tools, church systems and
+                        team products on the other. I also edit photos, cut videos of one to three minutes and
+                        run live production for a church media team.
+                    </p>
+                    <div class="btn-row">
+                        <a class="btn" href="projects.html">See my projects</a>
+                        <a class="btn" href="creative.html">See my creative work</a>
+                        <a class="btn" href="files/Excel-Amadi-CV.pdf" download>Download CV</a>
+                    </div>
+                    <ul class="hero__social" aria-label="Profiles">
+                        <li><a class="social-icon" href="https://github.com/Xcelsama" target="_blank" rel="noopener noreferrer" aria-label="GitHub, opens in a new tab"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a></li>
+                        <li><a class="social-icon" href="https://www.linkedin.com/in/excel-hephzibah-amadi-5733b4298" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn, opens in a new tab"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a></li>
+                        <li><a class="social-icon" href="https://www.tiktok.com/@xcel_sama" target="_blank" rel="noopener noreferrer" aria-label="TikTok, opens in a new tab"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg><span>TikTok</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Work wall: real pieces, stacked like prints on a desk. They straighten on hover. -->
+                <div class="wall" aria-label="Selected work">
+                    <a class="wall__card wall__card--poster" href="creative.html" aria-label="ASSON poster design, see creative work">
+                        <img src="images/asson-poster.jpg" alt="Official poster for the Chief Councilor of ASSON, Uniport chapter, maroon and gold" width="1000" height="1059">
+                        <span class="wall__tag">Poster</span>
+                    </a>
+                    <a class="wall__card wall__card--ui" href="projects.html" aria-label="Nexora interface design, see projects">
+                        <img src="images/shots/nexora.jpg" alt="Nexora home page with search bar and example itinerary" width="1280" height="720">
+                        <span class="wall__tag">Interface</span>
+                    </a>
+                    <a class="wall__card wall__card--code" href="https://any-file-opener-ten.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="AnyFile Viewer live site, opens in a new tab">
+                        <span class="wall__code-title">AnyFile Viewer</span>
+                        <span class="wall__code-text">Open and edit files right on your device. No upload, no account.</span>
+                        <span class="wall__chips"><b>Next.js</b><b>PWA</b><b>Android APK</b></span>
+                        <span class="wall__tag">Web app</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul class="proof" aria-label="At a glance">
+                    <li><strong>4,000+</strong><span>followers on Tech-X, the tech channel I run</span></li>
+                    <li><strong>7</strong><span>projects live on the web</span></li>
+                    <li><strong>3</strong><span>crafts, shown below</span></li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="crafts" aria-label="My three crafts">
+                    <li><a class="craft" href="creative.html">
+                        <span class="craft__name">Design</span>
+                        <span class="craft__text">Posters, flyers and full interface designs with a clean, confident look, made for churches, student bodies and products.</span>
+                    </a></li>
+                    <li><a class="craft" href="projects.html">
+                        <span class="craft__name">Code</span>
+                        <span class="craft__text">Full-stack web apps shipped live: interface, database, login and deployment.</span>
+                    </a></li>
+                    <li><a class="craft" href="creative.html">
+                        <span class="craft__name">Video</span>
+                        <span class="craft__text">Edited videos from one to three minutes, plus live broadcast production for a church media team.</span>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ 01. ABOUT ============ -->
+        <section id="about" class="panel">
+            <div class="container">
+                <p class="section-label">01. About</p>
+                <div class="panel__body">
+
+                    <h2 class="panel__title">More Than Code</h2>
+
+                    <div class="about__grid">
+                        <div class="about__copy">
+                            <p class="about__lead">
+                                I’m a graphic designer and self-taught full-stack developer from
+                                Port Harcourt, Nigeria. I design posters, flyers and interfaces, and
+                                I build them into web apps that people can actually use: file tools
+                                that run in the browser, systems for churches and small businesses,
+                                and products built with a team.
+                            </p>
+                            <p>
+                                Beyond that, I edit photos and publish them in my own gallery, make
+                                videos of one to three minutes for TikTok and run live production for a church media
+                                team. Design and code feed each other: I build tools for my own
+                                editing, and I can design the visuals a product needs.
+                            </p>
+                        </div>
+
+                        <!-- Portrait slot. To use a real photo, replace everything inside
+                             .portrait__frame with:
+                             <img src="images/excel.jpg" alt="Excel Amadi" width="480" height="480"> -->
+                        <div class="portrait">
+                            <div class="portrait__frame">
+                                <svg viewBox="0 0 200 200" width="56" height="56" aria-hidden="true">
+                                    <path d="M56 61 L144 146" fill="none" stroke="currentColor" stroke-width="21" stroke-linecap="round"/>
+                                    <path d="M144 56 L56 146" fill="none" stroke="var(--surface)" stroke-width="30" stroke-linecap="round"/>
+                                    <path d="M144 56 L56 146" fill="none" stroke="currentColor" stroke-width="21" stroke-linecap="round"/>
+                                    <circle cx="100" cy="52" r="11" fill="currentColor"/>
+                                </svg>
+                                <span class="portrait__name">Excel Amadi</span>
+                                <span class="portrait__place">Port Harcourt, Nigeria</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="facts">
+                        <li class="facts__row">
+                            <span class="facts__label">Based in</span>
+                            <span class="facts__value">Port Harcourt, Nigeria</span>
+                        </li>
+                        <!-- AGE: add it here when you are ready, then delete these comment marks.
+                        <li class="facts__row">
+                            <span class="facts__label">Age</span>
+                            <span class="facts__value">YOUR AGE</span>
+                        </li>
+                        -->
+                        <li class="facts__row">
+                            <span class="facts__label">Studying</span>
+                            <span class="facts__value">B.Sc. Anatomy student, University of Port Harcourt</span>
+                        </li>
+                        <li class="facts__row">
+                            <span class="facts__label">Community</span>
+                            <span class="facts__value">Active member of Salvation Ministries, serving on the media team</span>
+                        </li>
+                        <li class="facts__row">
+                            <span class="facts__label">Recognition</span>
+                            <span class="facts__value">Top GitHub contributor in Nigeria; ranked among top developers in Port Harcourt on Stardev.io</span>
+                        </li>
+                        <li class="facts__row">
+                            <span class="facts__label">Open to</span>
+                            <span class="facts__value">Internships, remote and part-time roles</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="panel__subtitle">Roles</h3>
+                    <ul class="entries">
+                        <li class="entry">
+                            <h4 class="entry__name">Head of Media and Publicity</h4>
+                            <div class="entry__body">
+                                <p class="entry__text">ASSON (Anatomical Students’ Association), University of Port Harcourt chapter, Legislative section.</p>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h4 class="entry__name">Media team member</h4>
+                            <div class="entry__body">
+                                <p class="entry__text">Salvation Ministries. Live production, posters, flyers and mobile edits for church media.</p>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h4 class="entry__name">Runs Tech-X</h4>
+                            <div class="entry__body">
+                                <p class="entry__text">A WhatsApp channel for tech tips and news with 4,000+ followers, and a small volunteer team that I manage.</p>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h4 class="entry__name">Project lead, Nexora</h4>
+                            <div class="entry__body">
+                                <p class="entry__text">A booking and lifestyle platform built by a small team. I lead the frontend and built its shared design system.</p>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h4 class="entry__name">Co-founder</h4>
+                            <div class="entry__body">
+                                <p class="entry__text">Code no Senkai and Code the Earth, two teams on GitHub.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 class="panel__subtitle">Training</h3>
+                    <ul class="entries">
+                        <li class="entry">
+                            <h4 class="entry__name">CIL Academy</h4>
+                            <div class="entry__body">
+                                <!-- Add the course title and year here, then add more rows for your other courses. -->
+                                <p class="entry__text">Completed a course with CIL Academy.</p>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h4 class="entry__name">SkySaving Tech Hub</h4>
+                            <div class="entry__body">
+                                <p class="entry__text">Mentorship programme and frontend developer internship, where I built X-Pay, a fintech interface.</p>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h4 class="entry__name">CodeOrbit Tech</h4>
+                            <div class="entry__body">
+                                <p class="entry__text">Full-stack development internship, in progress.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 02. SKILLS ============ -->
+        <section id="skills" class="panel">
+            <div class="container">
+                <p class="section-label">02. Skills</p>
+                <div class="panel__body">
+
+                    <h2 class="panel__title">Build and Create</h2>
+                    <p class="panel__text">
+                        Design and code, side by side. The design makes what I build look better
+                        and flow better, and the content helps it reach more people.
+                    </p>
+
+                    <ul class="entries">
+                        <li class="entry">
+                            <h3 class="entry__name">Graphic and UI design</h3>
+                            <div class="entry__body">
+                                <p class="entry__text">Posters, flyers and visuals for church events and student bodies, plus interface design and the animation that makes a site flow.</p>
+                                <div class="entry__links">
+                                    <a class="project-link" href="creative.html">See my design work</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h3 class="entry__name">Development</h3>
+                            <div class="entry__body">
+                                <p class="entry__text">Web apps from interface to database: responsive front ends, APIs, authentication and deployment, working with AI tools to build faster.</p>
+                                <p class="entry__meta">HTML, CSS, JavaScript, TypeScript, Next.js, Vue.js, Tailwind CSS, Node.js, Supabase, MongoDB, Git, Vercel, Docker</p>
+                                <div class="entry__links">
+                                    <a class="project-link" href="projects.html">See my projects</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h3 class="entry__name">Content</h3>
+                            <div class="entry__body">
+                                <p class="entry__text">Photo edits published in my own gallery, one to three minute videos for TikTok, AI-assisted images and video, and live production for a church media team.</p>
+                                <p class="entry__meta">Lightroom, PicsArt, CapCut</p>
+                                <div class="entry__links">
+                                    <a class="project-link" href="creative.html">See my creative work</a>
+                                    <a class="project-link" href="https://excels-gallery.vercel.app/gallery" target="_blank" rel="noopener noreferrer" aria-label="Excel’s Gallery live site, opens in a new tab">Open the gallery</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="entry">
+                            <h3 class="entry__name">Community</h3>
+                            <div class="entry__body">
+                                <p class="entry__text">Running Tech-X, a tech tips and news channel on WhatsApp with 4,000+ followers and a small volunteer team.</p>
+                                <div class="entry__links">
+                                    <a class="project-link" href="https://whatsapp.com/channel/0029Va9wmuz8F2pGIURwmo0m" target="_blank" rel="noopener noreferrer" aria-label="Tech-X on WhatsApp, opens in a new tab">Visit Tech-X</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 03. PROJECTS (short version; full list is on projects.html) ============ -->
+        <section id="projects" class="panel">
+            <div class="container">
+                <p class="section-label">03. Projects</p>
+                <div class="panel__body">
+
+                    <h2 class="panel__title">Selected Work</h2>
+                    <p class="panel__text">
+                        Three of the things I’ve built. The full list is on the projects page.
+                    </p>
+
+                    <ul class="project-list">
+                        <!-- Screenshots: run "node tools/screenshots.mjs" once to create them. Until the file exists,
+         onerror="this.remove()" (a tiny instruction meaning "if this image fails, delete it") hides the gap. -->
+                        <li class="project-row">
+                            <h3 class="project-row__name">AnyFile Viewer</h3>
+                            <div class="project-row__body">
+                                <img class="thumb" src="images/shots/anyfile.png" alt="Screenshot of AnyFile Viewer" width="1280" height="720" loading="lazy" onerror="this.remove()">
+                                <p class="project-row__text">Open, preview and edit files entirely on your device. No uploads, no backend, no account.</p>
+                                <p class="project-row__stack">Next.js 14, Tailwind CSS, PWA</p>
+                            </div>
+                            <div class="project-row__links">
+                                <a class="project-link" href="https://github.com/Xcelsama/Any-file-opener" target="_blank" rel="noopener noreferrer" aria-label="AnyFile Viewer on GitHub, opens in a new tab">GitHub</a>
+                                <a class="project-link" href="https://any-file-opener-ten.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="AnyFile Viewer live site, opens in a new tab">Live</a>
+                            </div>
+                        </li>
+                        <li class="project-row">
+                            <h3 class="project-row__name">Absolute Anatomy</h3>
+                            <div class="project-row__body">
+                                <img class="thumb" src="images/shots/anatomy.png" alt="Screenshot of Absolute Anatomy" width="1280" height="720" loading="lazy" onerror="this.remove()">
+                                <p class="project-row__text">A free 3D anatomy atlas that I’m building as an Anatomy student. A work in progress.</p>
+                                <p class="project-row__stack">Next.js, three.js, TypeScript. In progress</p>
+                            </div>
+                            <div class="project-row__links">
+                                <a class="project-link" href="https://absolutee-anatomyy.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Absolute Anatomy live site, opens in a new tab">Live</a>
+                            </div>
+                        </li>
+                        <li class="project-row">
+                            <h3 class="project-row__name">Excel’s Gallery</h3>
+                            <div class="project-row__body">
+                                <img class="thumb" src="images/shots/gallery.png" alt="Screenshot of Excel’s Gallery" width="1280" height="720" loading="lazy" onerror="this.remove()">
+                                <p class="project-row__text">A before-and-after gallery for my Lightroom edits, with a private admin studio secured by Supabase Auth and Row Level Security.</p>
+                                <p class="project-row__stack">Next.js, Supabase, Row Level Security</p>
+                            </div>
+                            <div class="project-row__links">
+                                <a class="project-link" href="https://github.com/Xcelsama/excels-gallery" target="_blank" rel="noopener noreferrer" aria-label="Excel’s Gallery on GitHub, opens in a new tab">GitHub</a>
+                                <a class="project-link" href="https://excels-gallery.vercel.app/gallery" target="_blank" rel="noopener noreferrer" aria-label="Excel’s Gallery live site, opens in a new tab">Live</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn-row">
+                        <a class="btn" href="projects.html">See all projects</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 04. CREATIVE (short version; full page is creative.html) ============ -->
+        <section id="creative" class="panel">
+            <div class="container">
+                <p class="section-label">04. Creative</p>
+                <div class="panel__body">
+
+                    <h2 class="panel__title">Creative Work</h2>
+                    <p class="panel__text">
+                        Posters and flyers, a photo gallery I run myself, one to three minute videos on TikTok,
+                        AI-assisted visuals and live production, plus the tools I built to support them.
+                    </p>
+
+                    <h3 class="panel__subtitle panel__subtitle--first">From my gallery</h3>
+                    <!-- GALLERY PREVIEW: each tile links to its post in Excel’s Gallery. The poster is a file
+                         in images; the other three load from the gallery site itself, so if you delete
+                         a post there, remove its tile here. -->
+                    <ul class="gallery-strip">
+                        <li>
+                            <a class="gallery-tile" href="https://excels-gallery.vercel.app/gallery/d5821250-a02f-47ba-b2f5-4740172af9a2" target="_blank" rel="noopener noreferrer" aria-label="Poster design, ASSON, opens in Excel’s Gallery in a new tab">
+                                <img src="images/asson-poster.jpg" alt="Official poster for the Chief Councilor of ASSON, Uniport chapter, with maroon and gold name banner" width="640" height="800" loading="lazy">
+                                <span>Poster design, ASSON</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="gallery-tile" href="https://excels-gallery.vercel.app/gallery/199a13b7-38bc-43cb-aa26-86dd73b9faf6" target="_blank" rel="noopener noreferrer" aria-label="Haze cleared, Lightroom, opens in Excel’s Gallery in a new tab">
+                                <img src="https://excels-gallery.vercel.app/_next/image?url=https%3A%2F%2Fasnfihnnqytxftcpuxpy.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fgallery%2F199a13b7-38bc-43cb-aa26-86dd73b9faf6%2Fafter-1791028478720.jpg&amp;w=640&amp;q=90" alt="Bombay High Court and palms after editing, with a deeper sky and richer greens" width="640" height="800" loading="lazy">
+                                <span>Haze cleared, Lightroom</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="gallery-tile" href="https://excels-gallery.vercel.app/gallery/c724e4cf-a90c-4d43-ba7b-db2dd62a5c21" target="_blank" rel="noopener noreferrer" aria-label="Landscape edit, opens in Excel’s Gallery in a new tab">
+                                <img src="https://excels-gallery.vercel.app/_next/image?url=https%3A%2F%2Fasnfihnnqytxftcpuxpy.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fgallery%2Fc724e4cf-a90c-4d43-ba7b-db2dd62a5c21%2Fafter-1790816903959.jpg&amp;w=640&amp;q=90" alt="Oahu beach landscape after editing" width="640" height="800" loading="lazy">
+                                <span>Landscape edit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="gallery-tile" href="https://excels-gallery.vercel.app/gallery/e6c88bb8-afa4-473f-9be9-7862e0ef3f5f" target="_blank" rel="noopener noreferrer" aria-label="Cinematic teal and orange, opens in Excel’s Gallery in a new tab">
+                                <img src="https://excels-gallery.vercel.app/_next/image?url=https%3A%2F%2Fasnfihnnqytxftcpuxpy.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fgallery%2Fe6c88bb8-afa4-473f-9be9-7862e0ef3f5f%2Fafter-1790437825547.jpg&amp;w=640&amp;q=90" alt="Portrait given a cinematic teal and orange grade" width="640" height="800" loading="lazy">
+                                <span>Cinematic teal and orange</span>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <div class="btn-row">
+                        <a class="btn" href="creative.html">See my creative work</a>
+                        <a class="btn" href="https://excels-gallery.vercel.app/gallery" target="_blank" rel="noopener noreferrer" aria-label="Open the gallery, opens in a new tab">Open the gallery</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 05. CONTACT (short version; full details are on contact.html) ============ -->
+        <section id="contact" class="panel panel--last">
+            <div class="container">
+                <p class="section-label">05. Contact</p>
+                <div class="panel__body">
+
+                    <h2 class="panel__title">Let’s Work Together</h2>
+                    <p class="panel__text">
+                        I’m open to internships, remote and part-time roles, and collaborations.
+                        If you have a project, a role or a question, my inbox is open.
+                    </p>
+
+                    <div class="btn-row">
+                        <a class="btn" href="mailto:ms.excel.amadi@gmail.com">Say Hello</a>
+                        <a class="btn" href="contact.html">More ways to reach me</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="site-footer__text">Designed and built by Excel Amadi &copy; 2026</p>
+        </div>
+    </footer>
+
 </body>
 </html>
