@@ -13,6 +13,7 @@ Built with plain HTML, CSS and a little JavaScript. No framework, no build step,
 | Home | `index.html` | Hero, stats, the three crafts, About, Skills, selected projects, creative preview, contact |
 | Projects | `projects.html` | Flagship projects, other projects and experiments |
 | Creative | `creative.html` | Posters and flyers, photo gallery, video, AI work |
+| Piece details | `work/*.html` | One page per selected piece, opened from the cards on Home and Creative |
 | Contact | `contact.html` | Email, profiles and other ways to reach me |
 
 ## Folder structure
@@ -52,7 +53,7 @@ It is a static site, so it works on Vercel, Netlify or GitHub Pages. `index.html
 - [ ] **Age:** add it in the About facts list in `index.html` (the commented-out row), if you want it shown.
 - [ ] **Courses:** add the course title and year for CIL Academy in the Training list.
 - [ ] **Portrait:** swap the X mark in the About section for a real photo (instructions are in a comment in `index.html`).
-- [ ] **Gallery preview:** three tiles load images from Excel's Gallery site. If you delete a post there, remove its tile here.
+- [ ] **Piece cards:** three cards load images from Excel's Gallery site. If you delete a post there, remove its tile here.
 
 ## Update the content
 
